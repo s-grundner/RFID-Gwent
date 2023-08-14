@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid f893b7c3-0ca4-4384-8f8a-dff11b79e174)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text_box "NOTES:"
+    (at 25.4 165.1 0) (size 139.7 25.4)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid cadf0fc1-6d29-49b4-ae96-37a2bfc9555c)
+  )
+
+  (hierarchical_label "ANT_IN" (shape input) (at 63.5 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid f3b49368-b19f-4ba4-bcdf-2686558788c5)
+  )
+)
