@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2023-08-15")
+    (rev "R0")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
@@ -615,6 +620,9 @@
     (uuid ea31e461-d2dd-441b-9d51-f389a429d466)
   )
 
+  (no_connect (at 45.72 69.85) (uuid a7917fe6-29f3-4244-8fd2-59ba7be22b39))
+  (no_connect (at 45.72 97.79) (uuid ce9744c5-d91c-48c3-974f-4d1fcb407cd4))
+
   (wire (pts (xy 43.18 77.47) (xy 45.72 77.47))
     (stroke (width 0) (type default))
     (uuid 0227a5fd-a587-4897-a189-2afeec2d1ee2)
@@ -654,10 +662,6 @@
   (wire (pts (xy 43.18 80.01) (xy 45.72 80.01))
     (stroke (width 0) (type default))
     (uuid 20138f2b-0779-45d8-b885-b34c14ab6e80)
-  )
-  (wire (pts (xy 43.18 97.79) (xy 45.72 97.79))
-    (stroke (width 0) (type default))
-    (uuid 20338ff3-f3e3-48dd-bcf5-89fb7bda0672)
   )
   (wire (pts (xy 92.71 87.63) (xy 91.44 87.63))
     (stroke (width 0) (type default))
@@ -738,10 +742,6 @@
   (wire (pts (xy 162.56 68.58) (xy 162.56 67.31))
     (stroke (width 0) (type default))
     (uuid 4fcb2f05-c19c-4df8-8eb0-8df281f5119f)
-  )
-  (wire (pts (xy 43.18 69.85) (xy 45.72 69.85))
-    (stroke (width 0) (type default))
-    (uuid 5070e383-8b95-4be4-906a-b7e843930b63)
   )
   (wire (pts (xy 91.44 110.49) (xy 92.71 110.49))
     (stroke (width 0) (type default))
@@ -1008,7 +1008,7 @@
     (uuid a9764112-cb83-4f2a-934a-0c2a53f4140d)
   )
 
-  (text_box "NOTES:\nVDD_X as 3V3 Power output for MCU\n"
+  (text_box "NOTES:\nVDD_X as 3V3 Power output for MCU\nParallel (non direct) interface"
     (at 25.4 165.1 0) (size 139.7 25.4)
     (stroke (width 0) (type default))
     (fill (type none))
@@ -1016,6 +1016,14 @@
     (uuid 5e82bb93-da87-445f-a95b-a817329f121a)
   )
 
+  (text "use HSI RC" (at 44.45 71.12 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom) (href "#2"))
+    (uuid 26db0593-ff0a-46db-9d3d-8796dda34e68)
+  )
+  (text "direct mode only" (at 44.45 99.06 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 44bd641a-e1a8-4a5e-ab97-96be7db7dd05)
+  )
   (text "Decoupling" (at 114.3 49.53 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a1165884-e169-4869-99bd-2699defa93ab)
@@ -1082,10 +1090,6 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1d6a76ef-a687-4242-9596-51e57a13693b)
   )
-  (hierarchical_label "TRF_ASK_OOK" (shape bidirectional) (at 43.18 97.79 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 1dab2d61-116d-4e74-9427-8e9e0fd3070a)
-  )
   (hierarchical_label "RF_TX_OUT" (shape output) (at 92.71 80.01 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 42cf308e-e2fb-4ff9-b980-3ce04dd564aa)
@@ -1129,10 +1133,6 @@
   (hierarchical_label "TRF_IO_0" (shape bidirectional) (at 43.18 74.93 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27) italic) (justify right))
     (uuid d198eaf1-1c82-446f-ac3a-f557c16418f4)
-  )
-  (hierarchical_label "TRF_SYS_CLK" (shape output) (at 43.18 69.85 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e09769ac-cbe5-4819-af37-295f22ef784e)
   )
   (hierarchical_label "TRF_IO_5" (shape bidirectional) (at 43.18 87.63 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
