@@ -17,7 +17,6 @@ build
 sdkconfig.*
 c_cpp_properties.json
 .fake
-*.zip
 
 # Eclipse
 .metadata
