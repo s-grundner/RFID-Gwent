@@ -1,6 +1,30 @@
+# Eagle project files
+eagle.epf
+fabrication.lbr
+*.b#*
+*.s#*
+*.l#*
+*-exportpro.dru
+*-exportpro2.cfg
+DRILEGEND.CFG
+*.pro
 
-manufacturing/Reader_Module/fp-info-cache
+# Docs and firmware
+build
+.obsidian
+.pio
+.vscode
+sdkconfig.*
+c_cpp_properties.json
+.fake
+*.zip
+
+# Eclipse
+.metadata
+.settings
+
+# Kicad
+*.kicad_prl
+fp-info-cache
 manufacturing/Reader_Module/Reader_Module-backups/*
 manufacturing/Reader_Module/*.log
-manufacturing/Reader_Module/*.kicad_prl
-source/RFID_Gwent/.settings/*
